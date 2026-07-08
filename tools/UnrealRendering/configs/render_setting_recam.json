@@ -1,0 +1,69 @@
+{
+    "BASE_SHOOT_NUMBER": 5,
+    "renderer": "v2v",
+    "render":{
+        "enable_dof": false,
+        "render_depth": true,
+        "render_motion": false,
+        "render_jpg": true,
+        "render_exr": true
+    },
+    "charactor":{
+        "static": false
+    },
+    "camera": {
+        "lens": 20,
+        "aperture": 1.2,
+        "auto_exposure": true,
+        "exposure_bias": 0.0
+    },
+    "navigator":{
+        "frame_num": 85,
+        "target_frame_num": 81,
+        "warmup_frame_num": 15,
+        "SAFE_VOLUME_RADIUS": 50.0,
+        "camera_type":["center","rand","double","orbit","zoom_out","pan_left_right","rotate_left_right"],
+        "indoor": false,
+        "min_distance": 100,
+        "max_distance": 250,
+        "cam_height": 100,
+        "zoom_out": 1.3,
+        "zoom_in": 0.7,
+        "y_min": -20,
+        "y_max": 20,
+        "z_rot": 60,
+        "max_slope": 1.0
+    },
+    "collison":{
+        "surrounding_collison":{
+            "distance": [50],
+            "height": [100]
+        }
+    },
+    "start_point_collison":{
+        "test_roof": {
+            "max_hit_distance": 10000,
+            "min_roof_height": 400
+        },
+        "test_ground": {
+            "test_start_height": 200, 
+            "max_hit_distance": 1000,
+            "min_height": -200,
+            "max_height": 200
+        },
+        "surrounding_collison":{
+            "distance": [0, 50, 100],
+            "height": [60, 180, 150]
+        },
+        "test_surrounding": {
+            "test_range": [50, 2000],
+            "sample_number": 12,
+            "min_sample_number": 9
+        },
+        "forward_collison":{
+            "distance": 200,
+            "height": 100
+        }
+    }
+    
+}

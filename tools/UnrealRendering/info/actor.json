@@ -1,0 +1,145 @@
+[
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_001",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_001",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_002",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_002",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_003",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_003",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_004",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_004",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_005",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_005",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_006",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_006",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_007",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_007",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_008",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_008",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_009",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_009",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_Beauty_Shot_Surv_01",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Beauty_Shots_MP/BP_Beauty_Shot_Surv_01",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_012",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_012",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_011",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_011",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  },
+  {
+    "package": "/Game/FemaleHero_Survival",
+    "name": "BP_FemSurv_Variations_A_010",
+    "blueprint_path": "/Game/FemaleHero_Survival/Blueprints/Char_Variations/BP_FemSurv_Variations_A_010",
+    "skeleton_path": "/Game/FemaleHero_Survival/Mesh/Skin_Body/SkinBody_B/SK_SkinBody_B_Skeleton.SK_SkinBody_B_Skeleton",
+    "animation_asset_path": {
+      "walk": "/Game/FemaleHero_Survival/Animation/ThirdPerson/ThirdPersonWalk_Anim",
+      "idle": "/Game/3583AnimationsPack/Animations/NPC/Anim_TA_N_IDL",
+      "random": null
+    }
+  }
+]

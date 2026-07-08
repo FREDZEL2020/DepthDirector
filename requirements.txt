@@ -1,0 +1,44 @@
+torch==2.9.0  --index-url https://download.pytorch.org/whl/cu128
+torchvision==0.24.0  --index-url https://download.pytorch.org/whl/cu128
+cupy-cuda12x
+controlnet-aux==0.0.7
+imageio
+imageio[ffmpeg]
+safetensors
+einops
+sentencepiece
+protobuf
+modelscope
+ftfy
+pynvml
+pandas
+accelerate
+trimesh
+open3d
+GPUtil
+# git+https://github.com/NVlabs/nvdiffrast.git
+imageio
+decord==0.6.0
+OpenEXR==3.2.4
+timm
+torchdiffeq
+torchsde
+xformers
+datasets
+numpy
+scikit-image
+opencv-python
+omegaconf
+albumentations
+tensorboard
+beautifulsoup4
+ftfy
+func_timeout
+deepspeed
+diffusers>=0.36.0
+transformers==4.57.3
+av==12.0.0
+gradio
+peft
+# git+https://github.com/EasternJournalist/utils3d.git@3fab839f0be9931dac7c8488eb0e1600c236e183
+matplotlib<3.9

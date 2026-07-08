@@ -1,0 +1,15 @@
+{
+    "unreal_engine_path": "/home/ue_user/Unreal/Engine/Binaries/Linux/UnrealEditor-Cmd",
+    "project_path": "/data/UnrealProject",
+    "render_code": "/home/ue_user/code/src",
+    "dataset_type": "UE_Dynamic",
+    "depth_downsample": "4 2 2",
+    "output_path": "/home/ue_user/code/data/recam/v4",
+    "raw_output_path": "/data/renders_raw_output/",
+    "logs_path": "/home/ue_user/code/logs/recam/v4",
+    "levels_json": "/home/ue_user/code/info/levels.json",
+    "redis_url": "redis://172.17.0.1:6379",
+    "redis_passwd": "Jy7kgxm08k",
+    "db_num": 0,
+    "render_settings": "/home/ue_user/code/configs/render_setting_recam.json"
+}

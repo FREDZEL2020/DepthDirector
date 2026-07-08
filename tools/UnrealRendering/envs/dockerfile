@@ -1,0 +1,77 @@
+FROM nvidia/cuda:12.8.2-devel-ubuntu22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# 1. 安装依赖
+RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
+    vulkan-tools \
+    libvulkan1 \
+    mesa-vulkan-drivers \
+    xserver-xorg \
+    kmod \
+    xinit \
+    python3 \
+    python3-pip \
+    sudo \
+    curl \
+    git vim htop nvtop net-tools wget \
+    libgl1-mesa-glx libgl1-mesa-dev libglu1-mesa-dev mesa-utils xdg-user-dirs tmux \
+    xdg-utils \
+    ffmpeg \
+    ninja-build build-essential cmake \
+    libopenexr-dev
+
+# 这一步至关重要：告诉 NVIDIA Runtime 容器需要图形、视频和显示能力
+ENV NVIDIA_DRIVER_CAPABILITIES=all
+# # 对所有 GPU 可见
+ENV NVIDIA_VISIBLE_DEVICES=all
+
+# 3. 创建用户 (为了使用UE，创建非 root 用户)
+# 这里创建一个名为 'ue_user' 的用户，你可以根据需要修改 UID/GID
+ARG USER_ID=1001
+ARG GROUP_ID=1001
+RUN groupadd -g ${GROUP_ID} ue_user && \
+    useradd -m -u ${USER_ID} -g ue_user -s /bin/bash ue_user && \
+    usermod -aG sudo ue_user && \
+    echo 'ue_user ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
+# 4. 配置 NVIDIA Vulkan ICD（headless 渲染必须）
+RUN mkdir -p /usr/share/vulkan/icd.d /usr/share/glvnd/egl_vendor.d && \
+    echo '{"file_format_version":"1.0.0","ICD":{"library_path":"libEGL_nvidia.so.0","api_version":"1.3.0"}}' \
+        > /usr/share/vulkan/icd.d/nvidia_icd.json && \
+    echo '{"file_format_version":"1.0.0","ICD":{"library_path":"libEGL_nvidia.so.0"}}' \
+        > /usr/share/glvnd/egl_vendor.d/10_nvidia.json
+
+# 5. 设置工作目录和用户
+USER ue_user
+WORKDIR /home/ue_user
+
+# 6. 安装 Miniforge（conda-forge 渠道，无 Anaconda ToS 限制）
+RUN curl -fsSL https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh -o /tmp/miniforge.sh && \
+    bash /tmp/miniforge.sh -b -p /home/ue_user/miniforge3 && \
+    rm /tmp/miniforge.sh
+
+ENV PATH="/home/ue_user/miniforge3/bin:${PATH}"
+
+# 7. 新建 recam 环境并安装依赖（默认路径 ~/miniforge3/envs/recam，支持 conda activate recam）
+RUN conda create -n recam python=3.11 -y
+
+# 拷贝项目 requirements.txt
+# 构建时需以项目根目录为 context：docker build -f envs/dockerfile .
+COPY --chown=ue_user:ue_user requirements.txt /home/ue_user/requirements.txt
+
+# 安装所有依赖（torch/torchvision 的 --index-url 已写在 requirements.txt 内）
+RUN /home/ue_user/miniforge3/envs/recam/bin/pip install --no-cache-dir -r /home/ue_user/requirements.txt
+
+# 安装 nvdiffrast（requirements.txt 中已注释掉，单独安装以使用 --no-build-isolation）
+# TORCH_CUDA_ARCH_LIST 必须显式设置，否则 build 时无 GPU 导致 arch_list 为空而报 IndexError
+RUN TORCH_CUDA_ARCH_LIST="8.0;8.6;8.9;9.0;12.0" \
+    https_proxy=166.111.238.130:7890 /home/ue_user/miniforge3/envs/recam/bin/pip install --no-cache-dir --no-build-isolation \
+        git+https://github.com/NVlabs/nvdiffrast.git
+
+RUN /home/ue_user/miniforge3/envs/recam/bin/pip install redis
+
+RUN sudo apt install rsync -y
+# 启动容器后用以下命令验证 Vulkan 驱动：
+#   vulkaninfo | grep GPU
+CMD ["vulkaninfo"]

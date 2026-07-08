@@ -1,0 +1,13 @@
+{
+    "unreal_engine_path": "",
+    "project_path": "",
+    "render_code": "",
+    "dataset_type": "UE",
+    "output_path": "",
+    "raw_output_path": "",
+    "logs_path": "",
+    "levels_json": "",
+    "redis_url": "",
+    "redis_passwd": "",
+    "db_num": 0
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.egg_info/
+output
+models/train
+models/Wan-AI
+checkpoints
+*egg-info
+diffsynth.egg-info/

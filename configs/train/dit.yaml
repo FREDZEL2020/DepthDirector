@@ -1,0 +1,12 @@
+learning_rate: 0.00001
+num_epochs: 20
+gradient_accumulation_steps: 1
+trainable_models: "dit"
+use_gradient_checkpointing_offload: false
+find_unused_parameters: false
+weight_decay: 0.01
+max_timestep_boundary: 1.0
+min_timestep_boundary: 0.0
+# checkpoints
+trained_checkpoints: null
+lora_checkpoint: null

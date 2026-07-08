@@ -1,0 +1,14 @@
+# 数据集配置 - 从外部文件导入
+__include__: "dataset/recam.yaml"
+
+# 模型配置 - 从外部文件导入
+__include_model: "model/wan2_2_5b.yaml"
+
+# 训练配置
+__include_train: "train/lora.yaml"
+
+extra_inputs: "input_image,depth_cond,concat_video"
+
+# 输出配置
+output_path: "./checkpoints/depthdirector"
+save_steps: 1000

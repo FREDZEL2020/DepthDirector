@@ -1,0 +1,1 @@
+"C:\Program Files\Epic Games\UE_5.6\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" "D:\UEProject\Blank.uproject" "/Game/MMSupermarket/Maps/Supermarket_Map.umap"  -DDC-ForceMemoryCache -ABSLog=D:\UE\UnrealRendering\render.log

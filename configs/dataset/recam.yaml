@@ -1,0 +1,11 @@
+dataset_base_path: "../data/v20-pack/"
+dataset_metadata_path: "../data/v20-pack/metadata_train.csv"
+# val_dataset_base_path: "data/val/hard/"
+# val_dataset_metadata_path: "data/val/hard/metadata_test_all.csv"
+val_dataset_base_path: "data/val/Pi3X/"
+val_dataset_metadata_path: "data/val/Pi3X/metadata_test_all.csv"
+dataset_repeat: 1
+height: 704
+width: 1280
+num_frames: 81
+data_file_keys: "input,video,depth,mask"
