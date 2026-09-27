@@ -163,10 +163,15 @@ For detailed setup and usage, see [tools/UnrealRendering/README.md](tools/Unreal
 If you find DepthDirector useful for your research, please cite:
 
 ```bibtex
-@article{depthdirector2026,
-  title={Beyond Inpainting: Unleash 3D Understanding for Precise Camera-Controlled Video Generation},
-  author={Dong-Yu Chen, Yinxin Guo, Shuojin Yang, Tai-Jiang Mu, Shi-min Hu},
-  journal={arXiv preprint arXiv:2601.10214},
-  year={2026}
+@InProceedings{depthdirector,
+author="Chen, Dong-Yu
+and Guo, Yixin
+and Yang, Shuojin
+and Mu, Tai-Jiang
+and Hu, Shi-Min",
+title="Beyond Inpainting: Unleash 3D Understanding for Stable Camera-Controlled Video Re-Rendering",
+booktitle="Computer Vision -- ECCV 2026",
+year="2026",
+pages="148--166",
 }
 ```
